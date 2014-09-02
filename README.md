@@ -1,4 +1,3 @@
-ikr.su-blog
-===========
+# About
 
 Jekyll-based blog at ikr.su/blog

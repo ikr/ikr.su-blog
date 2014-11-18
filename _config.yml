@@ -1,10 +1,12 @@
 # Site settings
-title: Boo
+title: Primitive mind eruptions
 email: ikr@ikr.su
 description: > # this means to ignore newlines until "baseurl:"
-  Lorem ipsum for life
+  Hey there! My name is Ivan. I'm a constant learner, who loves building smart and well-crafted
+  software systems that are a joy to use and maintain. Beside computers and software, I love life in
+  general. I like smiling and talking to kind, positive people.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ikr.su/blog/" # the base hostname & protocol for your site
+url: "http://ikr.su" # the base hostname & protocol for your site
 twitter_username: ikr
 github_username:  ikr
 

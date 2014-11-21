@@ -9,9 +9,8 @@ tags:
 
 At the point when Agile has hit the fan in Russia, I had already left two own-product-based software
 companies; and since then was only doing custom software development. Therefore I will not
-generalize, claiming that Agile movement is just a publicity stunt to sell seminars and
-[Scrum master certificates](http://blog.objectmentor.com/articles/2010/04/27/certification-dont-waste-your-time
-"Certification: Don't Waste Your Time!"), even though Steve Yegge
+generalize, claiming that Agile movement is just a publicity stunt to sell seminars and Scrum Master
+certificates, even though Steve Yegge
 [says so](http://steve-yegge.blogspot.com/2006/09/good-agile-bad-agile_27.html). May be indeed it
 works great _for products_. I don't know, and won't judge until I try. What I do know, is that some
 of the core Agile practices are useless, and can even become harmful, — for the projects where
@@ -105,7 +104,7 @@ the customer is _using_ the system you deploy at the end of each iteration. But 
 totally don't! The only time they pay any attention to the application is during your meetings. And
 they are thoughtfully nodding then, asking questions — ultimately to conclude that the system is not
 finished yet, and all those missing things they're asking about are coming in the following
-iterations. Now imagine, [what happens](http://www.flickr.com/photos/34391223@N07/3199541334/), when
+iterations. Now imagine, [what happens](https://www.youtube.com/watch?v=zsTRxXvQY0s), when
 they — the very first time — _really_ start using the system, only a year after the project started.
 
 So, what do you think? Is the customer _wrong_ when acting like that? I don't think so. Well, at

@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Unfair?"
+date: 2011-03-10 05:13:00
+tags:
+  - thought
+  - short
+---
+
+Custom software development is hard because of the gap between the customer and the programmer: the
+programmer doesn't know much about the business, and the customer has no idea about making software.
+However, in the end of a successful project, the programmer _inevitably_ knows the business to the
+tiniest detail, while the customer may stay just as clueless on software.

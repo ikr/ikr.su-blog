@@ -49,6 +49,7 @@ _Last update: 22.11.2014_
 
 - [Bad Voltage](http://www.badvoltage.org/)
 - [The Changelog](http://thechangelog.com/podcast/)
+- [FLOSS Weekly](http://twit.tv/show/floss-weekly)
 - [LugRadio](http://www.lugradio.org/)*
 
 # DevOps

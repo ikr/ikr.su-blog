@@ -17,27 +17,48 @@ new suggestions from you; so please do comment.
 
 _Last update: 22.11.2014_
 
+# Software engineering at large
+
 - [Software Engineering Radio](http://www.se-radio.net/)
-- [Java Posse](http://javaposse.com/)
-- [Stack Exchange, aka StackOverflow podcast](http://blog.stackoverflow.com/category/podcasts/)
 - [Hanselminutes](http://www.hanselminutes.com/)
 - [DrunkAndRetired.com](http://drunkandretired.com/)
-- [Security Now](http://twit.tv/sn)
-- [FLOSS Weekly](http://twit.tv/FLOSS)
-- [The Changelog](http://thechangelog.com/podcast/)
 - [This Developer's Life](http://thisdeveloperslife.com/)
-- [Herding Code](http://herdingcode.com/)
-- [Debug](https://itunes.apple.com/us/podcast/debug/id578812394)
-- [NodeUp](http://nodeup.com/)
-- [JavaScript Jabber](http://javascriptjabber.com/)
-- [Ruby Rogues](http://rubyrogues.com/)
-- [The JavaScript Show](http://javascriptshow.com/)
-- [PHP Town Hall](http://phptownhall.com/)
+
+# Functional programming
+
 - [The Cognicast aka Think Relevance, The Podcast](http://blog.cognitect.com/cognicast)
 - [Mostly Erlang](http://mostlyerlang.com/)
 - [Mostly λazy](http://mostlylazy.com/)
+
+# JavaScript
+
+- [NodeUp](http://nodeup.com/)
+- [JavaScript Jabber](http://javascriptjabber.com/)
+- [The JavaScript Show](http://javascriptshow.com/)
+
+# Other languages
+
+- [Ruby Rogues](http://rubyrogues.com/)
 - [Cloud Out Loud | Ruby](https://itunes.apple.com/us/podcast/cloud-out-loud-ruby/id408098989)
 - [Cloud Out Loud | PHP](https://itunes.apple.com/us/podcast/cloud-out-loud-php/id486510242)
+- [PHP Town Hall](http://phptownhall.com/)
+
+# Free Software
+
+- [The Changelog](http://thechangelog.com/podcast/)
+
+# DevOps
+
 - [The Food Fight Show](http://foodfightshow.org/)
 - [The Ship Show](http://theshipshow.com/)
-- [BSDTalk](http://bsdtalk.blogspot.com/)
+
+# Technology in general
+
+- [Security Now](http://twit.tv/sn)
+- [Debug](https://itunes.apple.com/us/podcast/debug/id578812394)
+
+# German
+
+# Russian
+
+

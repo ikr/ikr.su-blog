@@ -21,7 +21,6 @@ _Last update: 22.11.2014_
 
 - [Software Engineering Radio](http://www.se-radio.net/)
 - [Hanselminutes](http://www.hanselminutes.com/)
-- [Healthy Hacker](http://www.healthyhacker.com/)
 - [Giant Robots Smashing into Other Giant Robots](http://giantrobots.fm/)
 - [DrunkAndRetired.com](http://drunkandretired.com/)*
 - [This Developer's Life](http://thisdeveloperslife.com/)*
@@ -63,6 +62,11 @@ _Last update: 22.11.2014_
 - [Security Now](http://twit.tv/sn)
 - [Accidental Tech Podcast](http://atp.fm/)
 - [Debug](https://itunes.apple.com/us/podcast/debug/id578812394)
+
+# Lifestyle
+
+- [Healthy Hacker](http://www.healthyhacker.com/)
+- [Get up and code](http://getupandcode.com/)
 
 # German
 

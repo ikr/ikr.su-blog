@@ -17,48 +17,60 @@ new suggestions from you; so please do comment.
 
 _Last update: 22.11.2014_
 
-# Software engineering at large
+# Software at large
 
 - [Software Engineering Radio](http://www.se-radio.net/)
 - [Hanselminutes](http://www.hanselminutes.com/)
-- [DrunkAndRetired.com](http://drunkandretired.com/)
-- [This Developer's Life](http://thisdeveloperslife.com/)
+- [Healthy Hacker](http://www.healthyhacker.com/)
+- [Giant Robots Smashing into Other Giant Robots](http://giantrobots.fm/)
+- [DrunkAndRetired.com](http://drunkandretired.com/)*
+- [This Developer's Life](http://thisdeveloperslife.com/)*
 
 # Functional programming
 
 - [The Cognicast aka Think Relevance, The Podcast](http://blog.cognitect.com/cognicast)
 - [Mostly Erlang](http://mostlyerlang.com/)
+- [Functional Geekery](http://www.functionalgeekery.com/)
+- [The Haskell Cast](http://www.haskellcast.com/)
 - [Mostly λazy](http://mostlylazy.com/)
 
 # JavaScript
 
-- [NodeUp](http://nodeup.com/)
 - [JavaScript Jabber](http://javascriptjabber.com/)
-- [The JavaScript Show](http://javascriptshow.com/)
+- [NodeUp](http://nodeup.com/)
+- [CodeWinds](http://codewinds.com/podcast.html)
 
-# Other languages
+# Other programming languages
 
 - [Ruby Rogues](http://rubyrogues.com/)
-- [Cloud Out Loud | Ruby](https://itunes.apple.com/us/podcast/cloud-out-loud-ruby/id408098989)
-- [Cloud Out Loud | PHP](https://itunes.apple.com/us/podcast/cloud-out-loud-php/id486510242)
 - [PHP Town Hall](http://phptownhall.com/)
+- [Programming Throwdown](http://www.programmingthrowdown.com/)
 
 # Free Software
 
+- [Bad Voltage](http://www.badvoltage.org/)
 - [The Changelog](http://thechangelog.com/podcast/)
+- [LugRadio](http://www.lugradio.org/)*
 
 # DevOps
 
-- [The Food Fight Show](http://foodfightshow.org/)
 - [The Ship Show](http://theshipshow.com/)
+- [DevOps Cafe](devopscafe.org/)
+- [The Food Fight Show](http://foodfightshow.org/)
 
 # Technology in general
 
 - [Security Now](http://twit.tv/sn)
+- [Accidental Tech Podcast](http://atp.fm/)
 - [Debug](https://itunes.apple.com/us/podcast/debug/id578812394)
 
 # German
 
+- [Chaosradio](http://chaosradio.ccc.de/)
+- [CRE Technik Kultur Gesellschaft](http://cre.fm/)
+
 # Russian
 
+- [EaxCast](http://eaxcast.rpod.ru/)
 
+_*Inactive_

@@ -15,7 +15,7 @@ working out, or doing chores, -- pretty much any time I don't have to communicat
 on something I'm doing. I'll keep my personal list up to date right here. I'd also love to hear new
 suggestions from you; so please do comment.
 
-_Last update: 22.11.2014_
+_Last update: 23.11.2014_
 
 # Software at large
 
@@ -64,7 +64,7 @@ _Last update: 22.11.2014_
 - [Accidental Tech Podcast](http://atp.fm/)
 - [Debug](https://itunes.apple.com/us/podcast/debug/id578812394)
 
-# Lifestyle
+# Exercising 
 
 - [Healthy Hacker](http://www.healthyhacker.com/)
 - [Get up and code](http://getupandcode.com/)

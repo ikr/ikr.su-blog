@@ -6,4 +6,6 @@ tags:
   - warstory
 ---
 
-Hi.
+Long time ago I contracted for a company selling digital photo prints. Me and a colleague of mine
+developed a Windows application in which you would drop some JPEG-s, crop, rotate them, fix some red
+eyes, and then ultimately order prints for them in various formats.

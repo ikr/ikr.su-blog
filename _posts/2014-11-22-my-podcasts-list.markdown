@@ -15,7 +15,7 @@ working out, or doing chores, -- pretty much any time I don't have to communicat
 on something I'm doing. I'll keep my personal list up to date right here. I'd also love to hear new
 suggestions from you; so please do comment.
 
-_Last update: 23.11.2014_
+_Last update: 27.11.2014_
 
 # Software at large
 
@@ -44,6 +44,7 @@ _Last update: 23.11.2014_
 - [Ruby Rogues](http://rubyrogues.com/)
 - [PHP Town Hall](http://phptownhall.com/)
 - [Programming Throwdown](http://www.programmingthrowdown.com/)
+- [The Bike Shed](http://bikeshed.fm/)
 
 # Free Software
 

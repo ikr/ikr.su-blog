@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A story about semantic naming"
-date: 2014-11-26 20:03:00
+date: 2014-11-29 12:30:00
 tags:
   - warstory
 ---
@@ -15,8 +15,8 @@ There was a twist though: the _customer_ wanted a _custom_ look for the applicat
 custom. So custom that we had to cover the whole window client area with bitmaps. Now, add to that
 numerous states of controls: disabled, pressed, checked, disabled and checked, mouse hovering,
 etc. Then, there was no transparency support for bitmaps, as there was no GDI+ for Windows 98 and
-2000. Thus, they had to draw every text on every background, for every of the 4 supported languages
-in Photoshop, with their nice font, and then give it to us as... correct, a bitmap.
+2000. Therefore, they had to draw every text on every background, for every of the 4 supported
+languages in Photoshop, with their nice font, and then give it to us as... correct, a bitmap.
 
 Ever since I've never had a project with accidental complexity that high. A tiniest thing required
 tons of work and rigorous attention to details. But that's not the point of the story, actually.
@@ -24,5 +24,14 @@ tons of work and rigorous attention to details. But that's not the point of the 
 So, as you can imagine we've ended up with _thousands_ of bitmaps. They were stored, of course, as
 _resources_ in resource DLL-s, one DLL per language, and their ID-s were aliased with `#define`-s in
 a long `resource.h` file. That was a pretty standard setup for the old-school Win32 apps. On top of
-the resources we had an object-oriented widgets implementation, often doubling in `camelCase` in the
-object properties the `CONST_CASE` names from `resource.h`.
+the resources we had an object-oriented widgets implementation, often doubling in the object
+properties in `camelCase` the `CONST_CASE` names from `resource.h`. Now, the interesting part was
+how we named our visual elements. Here are some examples for you:
+
+* `lightBlueBackground`
+* `redButtonDisabledText`
+* `blueFrameLeftTopCorner`
+* `yellowishGradientInTheCenter`
+
+Thus, the names reflected what color or pattern elements had, or where they were located in the GUI
+layout.

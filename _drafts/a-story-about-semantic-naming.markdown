@@ -19,8 +19,10 @@ etc. Then, there was no transparency support for bitmaps, as there was no GDI+ f
 in Photoshop, with their nice font, and then give it to us as... correct, a bitmap.
 
 Ever since I've never had a project with accidental complexity that high. A tiniest thing required
-tons of work and rigorous attention to details. But that's not the point of the story.
+tons of work and rigorous attention to details. But that's not the point of the story, actually.
 
 So, as you can imagine we've ended up with _thousands_ of bitmaps. They were stored, of course, as
 _resources_ in resource DLL-s, one DLL per language, and their ID-s were aliased with `#define`-s in
-a long `resource.h` file. That was a standard setup for the old-school Win32 apps.
+a long `resource.h` file. That was a pretty standard setup for the old-school Win32 apps. On top of
+the resources we had an object-oriented widgets implementation, often doubling in `camelCase` in the
+object properties the `CONST_CASE` names from `resource.h`.

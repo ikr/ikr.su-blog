@@ -38,6 +38,6 @@ Thus, the names reflected what color or pattern elements had, or where they were
 layout. We often reused the same visual element in multiple widgets. A light blue gradient could
 easily appear in a dozen of different places.
 
-After a few months we've successfully shipped the first versions, and tens of thousands of people
+After a few months we've successfully shipped the first version, and tens of thousands of people
 could appreciate our unique and fresh custom look. He-he. That was sarcasm. Frankly, I was quite
 glad it was all over.

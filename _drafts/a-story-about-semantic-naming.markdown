@@ -48,5 +48,6 @@ company. Oh yeah, and they were also running a total re-branding in Switzerland.
 going to change the company name. Now guess whose brilliant ordering software they wanted to use for
 all the new brands... While you're at it, guess how many of the `lightBlueGradient`-s stayed either
 light or blue in any of the new brands' GUI-s. Yep, you guessed it right: almost none. Moreover,
-many visual elements used in several places -- just because it was all, say, yellowish -- were going
-to get a completely different look in the new revision.
+many visual elements used in several places in the current version -- just because it was all, say,
+yellowish -- were going to get a completely different look in the new revision. Then, let's not
+forget that instead of 4 localizations we were going to support 7.

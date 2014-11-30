@@ -41,3 +41,9 @@ easily appear in a dozen of different places.
 After a few months we've successfully shipped the first version, and tens of thousands of people
 could appreciate our unique and fresh custom look. He-he. That was sarcasm. Frankly, I was quite
 glad it was all over.
+
+Then, about a year later we've got a call. The customer was really excited: they were expanding to
+Scandinavian market -- buying a Swedish, a Norwegian, and a Finnish digital photos printing
+company. Oh yeah, and they were also running a total re-branding in Switzerland. They were even
+changing the company name. Now guess whose brilliant ordering software they wanted to use for all
+the new brands...

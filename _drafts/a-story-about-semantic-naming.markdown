@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "A story about semantic naming"
-date: 2014-11-30 21:30:00
+title: "A story about naming"
+date: 2014-11-30 20:40:00
 tags:
   - warstory
 ---
@@ -15,8 +15,9 @@ There was a twist though: the _customer_ wanted a _custom_ look for the applicat
 custom. So custom that we had to cover the whole window client area with bitmaps. Now, add to that
 numerous states of controls: disabled, pressed, checked, disabled and checked, mouse hovering,
 etc. Then, there was no transparency support for bitmaps, as there was no GDI+ for Windows 98 and
-2000. Therefore, they had to draw every text on every background, for every of the 4 supported
-languages in Photoshop, with their nice font, and then give it to us as... correct, a bitmap.
+2000. Therefore, graphic designers had to draw every text on every background, for every of the 4
+supported languages in Photoshop, with their nice font, and then give it to us as... correct, a
+bitmap.
 
 Ever since I've never had a project with accidental complexity that high. A tiniest thing required
 tons of work and rigorous attention to details. But that's not the point of the story, actually.
@@ -38,9 +39,9 @@ Thus, the names reflected what color or pattern elements had, or where they were
 layout. We often reused the same visual element in multiple widgets. A light blue gradient could
 easily appear in a dozen of different places.
 
-After a few months we've successfully shipped the first version, and tens of thousands of people
-could appreciate our unique and fresh custom look. He-he. That was sarcasm. Frankly, I was quite
-glad it was all over.
+After a few months we've successfully shipped the first version, and plenty of end users could
+appreciate our unique and fresh custom look. He-he. That was sarcasm. Frankly, I was quite glad it
+was all over.
 
 Then, about a year later we've got a call. The customer was really excited: they were expanding to
 Scandinavian market -- buying a Swedish, a Norwegian, and a Finnish digital photos printing
@@ -49,5 +50,8 @@ going to change the company name. Now guess whose brilliant ordering software th
 all the new brands... While you're at it, guess how many of the `lightBlueGradient`-s stayed either
 light or blue in any of the new brands' GUI-s. Yep, you guessed it right: almost none. Moreover,
 many visual elements used in several places in the current version -- just because it was all, say,
-yellowish -- were going to get a completely different look in the new revision. Then, let's not
-forget that instead of 4 localizations we were going to support 7.
+yellowish -- were going to get a completely different look in the new revision. And finally, let's
+not forget that instead of 4 localizations we were going to support 7. What an epic surprise...
+
+So, the next time you get an idea of calling something a `redHeader` or a `rightColumn`, may be just
+stop for a moment, and think if that's really the best you can do.

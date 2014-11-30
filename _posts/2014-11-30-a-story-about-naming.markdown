@@ -51,7 +51,8 @@ all the new brands... While you're at it, guess how many of the `lightBlueGradie
 light or blue in any of the new brands' GUI-s. Yep, you guessed it right: almost none. Moreover,
 many visual elements used in several places in the current version -- just because it was all, say,
 yellowish -- were going to get a completely different look in the new revision. And finally, let's
-not forget that instead of 4 localizations we were going to support 7. What an epic surprise...
+not forget that instead of 4 bitmap localizations we were going to support 7. What an epic
+surprise...
 
 So, the next time you get an idea of calling something a `redHeader` or a `rightColumn`, may be just
 stop for a moment, and think if that's really the best you can do.

@@ -46,4 +46,7 @@ Then, about a year later we've got a call. The customer was really excited: they
 Scandinavian market -- buying a Swedish, a Norwegian, and a Finnish digital photos printing
 company. Oh yeah, and they were also running a total re-branding in Switzerland. They were even
 changing the company name. Now guess whose brilliant ordering software they wanted to use for all
-the new brands...
+the new brands... While you're at it, guess how many of the `lightBlueGradient`-s stayed either
+light or blue in any of the new brands' GUI-s. Yep, you guessed it right: almost none. Moreover,
+many visual elements used in several places -- just because it was all, say, yellowish -- were going
+to get a completely different look in the new revision.

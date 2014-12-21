@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The true meaning of DRY"
-date: 2014-12-20 19:00:00
+date: 2014-12-21 10:00:00
 tags:
   - solid
   - design

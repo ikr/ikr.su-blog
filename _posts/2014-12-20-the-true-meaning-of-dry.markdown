@@ -17,6 +17,6 @@ finds nothing. But rather it's about not repeating _the knowledge_ in the code. 
 _accidental,_ and there's _essential_ repetition. Chasing the accidental repetition is a road to
 hell: things that look the same today will most certainly change differently in the future.
 
-Just as almost everything else in software, that point traces back to a paper from the 1970-s. This
-time, it's Parnas'es
+Just as almost everything else in software, the _essential DRY_ traces back to a paper from the
+1970-s. This time, it's Parnas'es
 [On the criteria to be used in decomposing systems into modules](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2979&context=compsci).

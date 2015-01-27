@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inheritance vs. is-a"
-date: 2015-01-27 21:30:00
+date: 2015-01-27 15:07:00
 tags:
   - design
   - oop
@@ -24,7 +24,7 @@ rushing to the conclusion. The two gurus _are_ right of course, but there's a ca
 they're talking about isn't the is-a you're used to in the real world. Here's a great example I
 heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 [Hanselminutes](http://www.hanselman.com/blog/HanselminutesPodcast145SOLIDPrinciplesWithUncleBobRobertCMartin.aspx),
--- I'll take the main idea and sugar-coat it a bit. Let it be Plato addressing Meletus.
+-- I'll take the main idea and sugar-coat it a bit. Let it be Plato casually addressing Meletus.
 
 -- Come hither, Meletus, and let me ask a question of you. Is square a rectangle?
 
@@ -54,7 +54,7 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
    adjusting height/width.
 
 -- Precisely! Now imagine we have a raster viewport over the plane of figures, that gets rendered on
-   a computer display. It subscribes to the figures' geometry changes, and decides whether there's
+   a computer display. It subscribes to the figures' geometry changes, and decides whether there's a
    need to recalcualte/redraw the raster. Then, at some point it has the following configuration.
    
 ![Viewport and a square](/blog/assets/viewport-and-square.png)
@@ -74,7 +74,11 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 -- #$$%^&*~@-!!!
 
 Where exactly did it go wrong? How could Plato trick Meletus? Let us reiterate. A square is
-definitely a rectangle, no doubt about that. But is `Square` a `Rectangle` having the methods
-`setHeight` and `setWidth` described above? Hell no! There's a very special meaning of is-a for the
-object classes' inheritance, and it's defined by the
-[Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle).
+definitely a rectangle, no doubt about that. But is `Square` a `Rectangle`, having the public
+interface methods `setHeight` and `setWidth` described above? Hell no! There's a very special
+meaning of is-a for the object classes' inheritance, and it's defined by the
+[Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle): an
+instance of a subclass must be usable in any context where an instance of the superclass is used,
+and there must be no semantic incompatibilities. Clearly, the syntactic adherence to the same public
+interface is not enough to assure the is-a relationship in code. `Square` broke the public interface
+semantics contract of `Rectangle`, and therefore, `Square` is-not-a `Rectangle` here.

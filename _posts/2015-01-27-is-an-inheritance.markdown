@@ -52,4 +52,6 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 -- Well, a `Square` has to remain a square. Therefore, adjusting width/height will also result in
    adjusting height/width.
 
--- Precisely! Now imagine...
+-- Precisely! Now imagine we have a raster viewport over the plane of figures, that gets rendered on
+   a computer display. It subscribes to the figures' geometry changes, and decides whether there's
+   need to recalcualte/redraw the raster.

@@ -30,9 +30,12 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 
 -- Of course it is! What kind of question is that?
 
--- Good. Let's imagine us implementing a `Rectangle` class, having methods `changeHeight(h)` and
-   `changeWidth(w)`. Say, that's a vector graphics program... You tell a rectangle to change the
-   height or width, and it triggers a redraw.
+-- Good. Let's imagine us implementing a `Rectangle` class, having methods `setHeight(float h)`
+   and `setWidth(float w)`, inflating or deflating the figure, keeping its center's coordinates
+   fixed. Say, that's a vector graphics program... You tell a rectangle to change the height or
+   width, and it triggers a redraw.
+
+![Rectangle inflate and deflate](/blog/assets/rect-inflate-deflate.png)
 
 -- Sure. But I'd advise you to indicate the units of measurement in such an interface.
 
@@ -46,12 +49,19 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 
 -- Yes...
 
--- What will be special about the `Square`'s implementation of `changeHeight(h)` and
-   `changeWidth(w)`?
+-- What will be special about the `Square`'s implementation of `setHeight` and `setWidth`?
 
 -- Well, a `Square` has to remain a square. Therefore, adjusting width/height will also result in
    adjusting height/width.
 
 -- Precisely! Now imagine we have a raster viewport over the plane of figures, that gets rendered on
    a computer display. It subscribes to the figures' geometry changes, and decides whether there's
-   need to recalcualte/redraw the raster.
+   need to recalcualte/redraw the raster. Then, at some point it has the following configuration.
+   
+![Viewport and a square](/blog/assets/viewport-and-square.png)
+
+-- Cool drawing Plato!
+
+-- Thanks. Now, the green hatched square, which is so close to the viewport's border, receives a
+   command to change its width. The viewport has been designed by an experienced OOP practitioner,
+   and, of course, it works with rectangles polymorphically.

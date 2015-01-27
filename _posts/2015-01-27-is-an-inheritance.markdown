@@ -30,17 +30,16 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 
 -- Of course it is! What kind of question is that?
 
--- Good. Let's imagine us implementing a `Rectangle` class, having methods `setHeight(float h)`
-   and `setWidth(float w)`, inflating or deflating the figure, keeping its center's coordinates
-   fixed. Say, that's a vector graphics program... You tell a rectangle to change the height or
-   width, and it triggers a redraw.
+-- Good. Let's imagine us implementing a `Rectangle` class, having methods `setHeight(float h)` and
+   `setWidth(float w)`, inflating or deflating the figure, keeping its center's coordinates
+   fixed. Say, it's a vector graphics program... You tell a rectangle to change the height or width,
+   and it triggers a redraw.
 
 ![Rectangle inflate and deflate](/blog/assets/rect-inflate-deflate.png)
 
 -- Sure. But I'd advise you to indicate the units of measurement in such an interface.
 
--- Let's just agree we're using [SI](https://en.wikipedia.org/wiki/International_System_of_Units)
-   for everything, OK? Anyway, it's irrelevant for what I'm trying to convey. Suppose now we need a
+-- Oh, totally. However, that's irrelevant to what I'm trying to convey. Suppose now we also need a
    class for a `Square`. Is `Square` a `Rectangle`?
 
 -- You've already asked.
@@ -63,5 +62,14 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 -- Cool drawing Plato!
 
 -- Thanks. Now, the green hatched square, which is so close to the viewport's border, receives a
-   command to change its width. The viewport has been designed by an experienced OOP practitioner,
-   and, of course, it works with rectangles polymorphically.
+   command to increase its width. The viewport has been designed by an experienced OOP practitioner,
+   and, of course, it works with `Rectangles` (`Squares` included) polymorphically. It thinks:
+   "Alright, the width grew, but there's no vertical overlap with the viewport area, I can safely
+   ignore that change!" TADA! A bug!
+   
+-- But... but...
+
+-- So, is `Square` a `Rectangle`?
+
+-- #$$%^&*~@-!!!
+

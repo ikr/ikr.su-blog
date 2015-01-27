@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Inheritance == is-a?"
-date: 2015-01-26 21:15:00
+title: "Inheritance vs. is-a"
+date: 2015-01-27 11:55:00
 tags:
   - design
   - oop
@@ -24,16 +24,17 @@ rushing to a conclusion. The two gurus _are_ right of course, but there's a catc
 they're talking about isn't the is-a you're used to in the real world. Here's a great example I
 heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 [Hanselminutes](http://www.hanselman.com/blog/HanselminutesPodcast145SOLIDPrinciplesWithUncleBobRobertCMartin.aspx),
--- I'll take the main idea and sugar-coat it a bit.
+-- I'll take the main idea and sugar-coat it a bit. Let it be Plato addressing Meletus.
 
--- Is square a rectangle?
+-- Come hither, Meletus, and let me ask a question of you. Is square a rectangle?
 
 -- Of course it is! What kind of question is that?
 
--- Alright-alright. Let's imagine us implementing a `Rectangle` class, having methods
-   `changeHeight(h)` and `changeWidth(w)`. Say, that's a vector graphics program... You tell a
-   rectangle to change the height or width, and it triggers a redraw.
+-- Good. Let's imagine us implementing a `Rectangle` class, having methods `changeHeight(h)` and
+   `changeWidth(w)`. Say, that's a vector graphics program... You tell a rectangle to change the
+   height or width, and it triggers a redraw.
    
 -- Sure. But I'd advise you to indicate the units of measurement in such an interface.
 
--- ...
+-- Let's just suppose we use [SI](https://en.wikipedia.org/wiki/International_System_of_Units) for
+   everything, OK? Anyway, it's irrelevant for what I'm trying to get across.

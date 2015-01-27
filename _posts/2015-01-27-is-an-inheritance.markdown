@@ -20,7 +20,7 @@ means "is a." Commit this rule to memory._
 "Whoa, really? That categorically?" -- told I to _the book,_ being pretty sure it's more nuanced
 than just that straight rule. Well, who am I to argue with Mr. Meyers and Mr. McConnel? I'm simply
 embarrassing myself writing this right now, am I not? Please bare with me for a moment before
-rushing to a conclusion. The two gurus _are_ right of course, but there's a catch: the _is-a_
+rushing to the conclusion. The two gurus _are_ right of course, but there's a catch: the _is-a_
 they're talking about isn't the is-a you're used to in the real world. Here's a great example I
 heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 [Hanselminutes](http://www.hanselman.com/blog/HanselminutesPodcast145SOLIDPrinciplesWithUncleBobRobertCMartin.aspx),
@@ -73,3 +73,8 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 
 -- #$$%^&*~@-!!!
 
+Where exactly did it go wrong? How could Plato trick Meletus? Let us reiterate. A square is
+definitely a rectangle, no doubt about that. But is `Square` a `Rectangle` having the methods
+`setHeight` and `setWidth` described above? Hell no! There's a very special meaning of is-a for the
+object classes' inheritance, and it's defined by the
+[Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle).

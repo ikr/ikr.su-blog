@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inheritance vs. is-a"
-date: 2015-01-27 11:55:00
+date: 2015-01-27 21:30:00
 tags:
   - design
   - oop
@@ -33,8 +33,23 @@ heard from [Robert C. Martin](http://blog.cleancoder.com/) on
 -- Good. Let's imagine us implementing a `Rectangle` class, having methods `changeHeight(h)` and
    `changeWidth(w)`. Say, that's a vector graphics program... You tell a rectangle to change the
    height or width, and it triggers a redraw.
-   
+
 -- Sure. But I'd advise you to indicate the units of measurement in such an interface.
 
--- Let's just suppose we use [SI](https://en.wikipedia.org/wiki/International_System_of_Units) for
-   everything, OK? Anyway, it's irrelevant for what I'm trying to get across.
+-- Let's just agree we're using [SI](https://en.wikipedia.org/wiki/International_System_of_Units)
+   for everything, OK? Anyway, it's irrelevant for what I'm trying to convey. Suppose now we need a
+   class for a `Square`. Is `Square` a `Rectangle`?
+
+-- You've already asked.
+
+-- Indeed. Should I code it as `class Square extends Rectangle` then?
+
+-- Yes...
+
+-- What will be special about the `Square`'s implementation of `changeHeight(h)` and
+   `changeWidth(w)`?
+
+-- Well, a `Square` has to remain a square. Therefore, adjusting width/height will also result in
+   adjusting height/width.
+
+-- Precisely! Now imagine...

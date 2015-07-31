@@ -15,15 +15,15 @@ working out, or doing chores, -- pretty much any time I don't have to communicat
 on something I'm doing. I'll keep my personal list up to date right here. I'd also love to hear new
 suggestions from you; so please do comment.
 
-_Last update: 10.12.2014_
+_Last update: 31.08.2015_
 
 # Software at large
 
 - [Software Engineering Radio](http://www.se-radio.net/)
 - [Hanselminutes](http://www.hanselminutes.com/)
 - [Giant Robots Smashing into Other Giant Robots](http://giantrobots.fm/)
+- [This Developer's Life](http://thisdeveloperslife.com/)
 - [DrunkAndRetired.com](http://drunkandretired.com/)*
-- [This Developer's Life](http://thisdeveloperslife.com/)*
 
 # Functional programming
 
@@ -37,6 +37,8 @@ _Last update: 10.12.2014_
 
 - [JavaScript Jabber](http://javascriptjabber.com/)
 - [NodeUp](http://nodeup.com/)
+- [React Podcast](http://reactpodcast.com/)
+- [Descriptive](http://descriptive.audio/)
 - [CodeWinds](http://codewinds.com/podcast.html)
 
 # Other programming languages
@@ -78,7 +80,10 @@ _Last update: 10.12.2014_
 
 # Russian
 
+- [DevZen](http://devzen.ru/)
 - [EaxCast](http://eaxcast.rpod.ru/)
+- [Бананы и Линзы](http://ruhaskell.org/itunes-feed.xml)
+- [RadioJS](http://radiojs.ru/)
 
 ---
 _*Inactive_

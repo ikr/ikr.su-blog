@@ -15,7 +15,7 @@ working out, or doing chores, -- pretty much any time I don't have to communicat
 on something I'm doing. I'll keep my personal list up to date right here. I'd also love to hear new
 suggestions from you; so please do comment.
 
-_Last update: 31.08.2015_
+_Last update: 31.07.2015_
 
 # Software at large
 

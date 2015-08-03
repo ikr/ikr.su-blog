@@ -15,7 +15,7 @@ working out, or doing chores, -- pretty much any time I don't have to communicat
 on something I'm doing. I'll keep my personal list up to date right here. I'd also love to hear new
 suggestions from you; so please do comment.
 
-_Last update: 31.07.2015_
+_Last update: 03.08.2015_
 
 # Software at large
 
@@ -24,6 +24,7 @@ _Last update: 31.07.2015_
 - [Giant Robots Smashing into Other Giant Robots](http://giantrobots.fm/)
 - [This Developer's Life](http://thisdeveloperslife.com/)
 - [DrunkAndRetired.com](http://drunkandretired.com/)*
+- [Kalzumeus Podcast](http://www.kalzumeus.com/category/podcasts/)
 
 # Functional programming
 

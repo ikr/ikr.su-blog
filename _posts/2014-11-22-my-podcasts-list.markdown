@@ -15,11 +15,12 @@ working out, or doing chores, -- pretty much any time I don't have to communicat
 on something I'm doing. I'll keep my personal list up to date right here. I'd also love to hear new
 suggestions from you; so please do comment.
 
-_Last update: 03.08.2015_
+_Last update: 24.12.2015_
 
 # Software at large
 
 - [Software Engineering Radio](http://www.se-radio.net/)
+- [Software Engineering Daily](http://softwareengineeringdaily.com/category/podcast/)
 - [Hanselminutes](http://www.hanselminutes.com/)
 - [Giant Robots Smashing into Other Giant Robots](http://giantrobots.fm/)
 - [This Developer's Life](http://thisdeveloperslife.com/)
@@ -39,8 +40,10 @@ _Last update: 03.08.2015_
 - [JavaScript Jabber](http://javascriptjabber.com/)
 - [NodeUp](http://nodeup.com/)
 - [React Podcast](http://reactpodcast.com/)
+- [React Native Radio](https://devchat.tv/react-native-radio)
 - [Descriptive](http://descriptive.audio/)
 - [CodeWinds](http://codewinds.com/podcast.html)
+- [Three Devs and a Maybe](http://threedevsandamaybe.com/)
 
 # Other programming languages
 

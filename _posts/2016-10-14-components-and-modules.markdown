@@ -12,7 +12,7 @@ tags:
 ---
 
 At the place where I [work currently](http://www.xiag.ch/), we tend to prefer multiple independently
-deploy-able small software _components_ to huge single-piece monoliths. Component is an overloaded
+deployable small software _components_ to huge single-piece monoliths. Component is an overloaded
 term that can easily be misinterpreted. By _component_ I personally mean something very specific. To
 avoid the ambiguity, let me first enumerate what it's not. A component is not a programming language
 namespace or class, it's not a file, and not an in-process linked library like a jar, a dll, a
@@ -84,7 +84,7 @@ blurred. What can prevent crossing those boundaries and slowly but surely crawli
 [Big Ball of Mud](http://www.laputan.org/mud/) architecture, where everything depends on everything
 else? Only the clear understanding and active enforcement of consistent program design, and the
 aforementioned discipline. How realistic is to expect that in an ordinary project, where not all the
-developers are seniors with over 15 years of industry experience? It's a rhetorical question.
+developers are seniors with over 15 years of industry experience?
 
 Thereby, principally, modules isolated into their own source code repositories are the concerns'
 border guards. That purpose of modularization will stay relevant forever, even when computers become
@@ -93,9 +93,12 @@ a million times faster.
 So, what do we want? Composable modules with clear-cut borders! Do we want them actually to work?
 You bet!
 
-The easiest way that we're aware of in XIAG to ensure that the code works correctly is the
-test-driven development (TDD). Is it possible to practice TDD when a unit test suite's run time is,
-say, over 10 seconds? Definitely not! That imposes an objective hardware-bound restriction on how
-big of a module one can build. Indeed, computers get faster or more parallel all the time. On the
-other hand, programming languages and platforms get more sophisticated, and tend to do more and more
-things. May well be that those two opposing trends will compensate each other eternally.
+The easiest way I know to ensure that the code works correctly is the test-driven development
+(TDD). Is it possible to practice TDD when a unit test suite's run time is, say, over 10 seconds?
+Definitely not! That imposes an objective hardware-bound restriction on how big of a module one can
+build. Indeed, computers get faster or more parallel all the time. On the other hand, programming
+languages and platforms get more sophisticated, and tend to do more and more things. May well be
+that those two opposing trends will compensate each other eternally.
+
+So, the next time you'll be adding a file to your code base, may be consider sprouting a new module
+with its own repository instead?

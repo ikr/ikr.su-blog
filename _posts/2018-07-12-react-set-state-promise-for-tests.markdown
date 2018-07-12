@@ -32,34 +32,34 @@ I don't always write React components, but when I do, I test-drive them. Let me 
 Mocha](https://mochajs.org/). First, we mount the component with [enzyme,](http://airbnb.io/enzyme/)
 and fabricate some initial `provisionalValue`:
 
-```js
+{% highlight javascript %}
 let wrapper
 
 beforeEach(done => {
     wrapper = mount(<StarRatingInput value={1} />)
     wrapper.setState({ prospectiveValue: 2 }, done)
 })
-```
+{% endhighlight %}
 
 Mind the `done` callback passed to `setState`, to make sure that Mocha [waits for the state change
 to succeed](https://reactjs.org/docs/react-component.html#setstate) before proceeding with each of
 the test cases. Here's the first one of them:
 
-```js
+{% highlight javascript %}
 it('sets new prospective value on mouse hover for a star', () => {
     // Star at 0-based index 3 corresponds to a rating value of 4
     wrapper.find('a.star-rating-star').at(3).simulate('mouseEnter')
     assert.strictEqual(wrapper.state().prospectiveValue, 4)
 })
-```
+{% endhighlight %}
 
 The test is red: `2 != 4`. Let's make it green, changing the React component code.
 
-```js
+{% highlight javascript %}
 handleStarMouseEnter(value) {
     this.setState({ prospectiveValue: value })
 }
-```
+{% endhighlight %}
 
 Obviously.
 
@@ -71,7 +71,7 @@ componentDidUpdate.](https://github.com/facebook/react/issues/2642#issuecomment-
 would require pyramids of callbacks to implement. Meh. Could that instead be a nail for my new shiny
 async/await hammer? You bet!
 
-```js
+{% highlight javascript %}
 private _promiseSetStateDone: Promise<void>
 
 get promiseSetStateDone() {
@@ -84,25 +84,25 @@ constructor(props: Props) {
     this.state = { prospectiveValue: 0 }
 }
 
-```
+{% endhighlight %}
 
 Then, instead of
 
-```js
+{% highlight javascript %}
 this.setState({ prospectiveValue: value })
-```
+{% endhighlight %}
 
 we'll do
 
-```js
+{% highlight javascript %}
 this._promiseSetStateDone = new Promise(resolve => {
     this.setState({ prospectiveValue: value }, resolve)
 })
-```
+{% endhighlight %}
 
 Resulting in the test code like this:
 
-```js
+{% highlight javascript %}
 it('sets new prospective value on mouse hover for a star', async () => {
     // Star at 0-based index 3 corresponds to a rating value of 4
     wrapper.find('a.star-rating-star').at(3).simulate('mouseEnter')
@@ -110,6 +110,6 @@ it('sets new prospective value on mouse hover for a star', async () => {
 
     assert.strictEqual(wrapper.state().prospectiveValue, 4)
 })
-```
+{% endhighlight %}
 
 …And the test is now green. We can proceed test-driving.

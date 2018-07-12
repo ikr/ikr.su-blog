@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Providing a setState completetion Promise for tests"
+title: "Providing a setState completion Promise for tests"
 date: 2018-07-12 20:06:26
 tags:
   - javascript

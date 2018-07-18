@@ -74,7 +74,8 @@ server {
     ssl on;
     include /etc/nginx/conf.d/ssl.inc;
     include /etc/nginx/conf.d/*.location.inc;
-    …
+
+    # ...
 }
 {% endhighlight %}
 

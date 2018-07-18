@@ -168,6 +168,11 @@ lets_encrypt_cert_update:
     - identifier: lets_encrypt_cert_update
     - user: root
     - dayweek: 0
-    - hour: 1
+    - hour: 4
     - minute: 2
 {% endhighlight %}
+
+The `chronic` tool is a part of the [moreutils Debian package.](https://joeyh.name/code/moreutils/)
+It runs a command quietly unless it fails. Setting the `MAILTO` environment variable for cron makes
+sure all the failures are e-mailed to [webmaster@example.com.](mailto:webmaster@example.com) The
+cron job configured above will run every Sunday at 04:02.

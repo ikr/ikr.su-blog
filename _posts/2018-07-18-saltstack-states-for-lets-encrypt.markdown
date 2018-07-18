@@ -126,6 +126,13 @@ ssl_inc_transitional:
     - require_in:
       - service: nginx
 
+/etc/dehydrated/domains.txt:
+  file.managed:
+    - contents:
+      - example.com
+    - require:
+      - pkg: dehydrated
+
 initial_lets_encrypt_cert:
   cmd.run:
     - name: /usr/bin/dehydrated --cron

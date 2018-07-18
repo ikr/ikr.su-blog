@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SaltStack states for Let's Encrypt certificates"
+title: "SaltStack states for Let's Encrypt certificates on Debian with Nginx"
 date: 2018-07-18 14:20:00
 tags:
   - saltstack
@@ -14,9 +14,9 @@ tags:
 
 Recently I've configured [Let's Encrypt certificates](https://letsencrypt.org/) for a staging HTTPS
 server for one of our clients. That was amazingly easy to do. I remember checking the ACME protocol
-client tools in the very beginning of the Let's Encrypt initiative. The tools were, of course, very
-immature: hard to install and configure, and they only worked in interactive mode. It's all in the
-past now.
+client tools in the very beginning of Let's Encrypt initiative. Back then the tools were, of course,
+very immature: hard to install and configure, and they only worked in interactive mode. It's all in
+the past now.
 
 Basically, I took [this great blog
 post](https://techtalk.blog/simple-and-free-ssl-certificates-using-letsencrypt-and-nginx-530f03aee07)
@@ -24,7 +24,7 @@ and codified it in [SaltStack
 states.](https://docs.saltstack.com/en/latest/topics/tutorials/starting_states.html) SaltStack is an
 automatic configuration management tool similar to
 [Puppet](https://puppet.com/solutions/configuration-management) and
-[Ansible](https://www.ansible.com/use-cases/configuration-management). It is quite simple and
+[Ansible](https://www.ansible.com/use-cases/configuration-management). It's quite simple and
 declarative, yet it scales up to larger infrastructure. Our sysadmins love it.
 
 Below is the annotated YAML of my solution.
@@ -111,7 +111,7 @@ location ^~ /.well-known/acme-challenge {
 Now the tricky bit. The `/etc/nginx/conf.d/ssl.inc` referenced in the
 `salt://web-server/conf/example.com` will in the end contain the path to the certificate file, and
 the path to the secret server key file. We don't have those initially, before the ACME challenge
-takes place. Thus, need some “transitional” certificate and key to make nginx start and serve the
+takes place. Thus, we need some “transitional” certificate and key to make nginx start and serve the
 ACME challenge Web location over HTTP.
 
 {% highlight yaml %}

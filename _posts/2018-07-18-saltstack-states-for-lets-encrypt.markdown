@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SaltStack states for Let's Encrypt certificates"
-date: 2018-07-18 11:00:00
+date: 2018-07-18 14:20:00
 tags:
   - saltstack
   - ssl

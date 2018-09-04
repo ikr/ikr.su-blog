@@ -13,12 +13,13 @@ tags:
 This week at work I had to deal with [fixed-width column data like
 this.](https://www.six-group.com/interbank-clearing/dam/downloads/bc-bank-master/bcbankenstamm) That
 is: a plain text file where each line holds a single record with a predefined order of
-columns/fields. Each column has a predefined length (in symbols). Every line contains every column,
-and, therefore, every line has exactly the same length. For example,
+columns/fields. Each column has a predefined length (in symbols), and, if the value is shorter, it's
+padded with spaces. Every line contains every column, and, therefore, every line has exactly the
+same length. For example,
 
      Field A | Field B   | Field C     |…
     01234567890123456789AB0123456789ABCD…
-    01234567890123456789AB0123456789ABCD…
+    X         YYY         ZZZ           …
     …
 
 having the lengths of 10, 12, and 14 respectively, would be
@@ -28,6 +29,10 @@ having the lengths of 10, 12, and 14 respectively, would be
     A: "0123456789",
     B: "0123456789AB",
     C: "0123456789ABCD"
+}, {
+    A: "X",
+    B: "YY",
+    C: "ZZZ"
 }, …]
 {% endhighlight %}
 
@@ -101,7 +106,9 @@ private enum class RawBankDataField(val length: Int) {
 
 Note that, like in this example, we may need just a subset of the fields present in the data
 source. Nevertheless, obviously, we'd have to _enum_-erate all the columns anyway, up to the
-rightmost relevant to us.
+rightmost relevant to us. I particularly like that it's so easy to adapt to the changes in the data
+source format, and to support additional columns.
 
-If you have a lot of fields packed into the line, and a lot of lines, you may wish [to
+I only have to say that, if you have a lot of relevant fields packed into the data line, and a lot
+of lines, you may wish — for a better performance — [to
 memoize](https://en.wikipedia.org/wiki/Memoization) the `offset()` function.

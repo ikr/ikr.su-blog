@@ -99,5 +99,9 @@ private enum class RawBankDataField(val length: Int) {
 }
 {% endhighlight %}
 
+Note that, like in this example, we may need just a subset of the fields present in the data
+source. Nevertheless, obviously, we'd have to _enum_-erate all the columns anyway, up to the
+rightmost relevant to us.
+
 If you have a lot of fields packed into the line, and a lot of lines, you may wish [to
 memoize](https://en.wikipedia.org/wiki/Memoization) the `offset()` function.

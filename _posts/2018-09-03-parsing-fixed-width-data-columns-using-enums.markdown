@@ -39,15 +39,15 @@ or novel here. I'm sure this trick is familiar to many. However, I liked how nat
 suits the problem, and decided to share.
 
 {% highlight kotlin %}
-fun parseLine(rawSixData: String): BankRecord {
-    val parseStringBound = { f: RawSixBankDataField -> parseString(rawSixData, f) }
+fun parseLine(rawData: String): BankRecord {
+    val parseStringBound = { f: RawBankDataField -> parseString(rawData, f) }
 
     return BankRecord(
-        clearingNumber = parseInt(rawSixData, RawSixBankDataField.CLEARING_NUMBER),
-        name = parseStringBound(RawSixBankDataField.NAME),
-        postalAddress = parseStringBound(RawSixBankDataField.POSTAL_ADDRESS),
-        postalCode = parseStringBound(RawSixBankDataField.POSTAL_CODE),
-        city = parseStringBound(RawSixBankDataField.CITY)
+        clearingNumber = parseInt(rawData, RawBankDataField.CLEARING_NUMBER),
+        name = parseStringBound(RawBankDataField.NAME),
+        postalAddress = parseStringBound(RawBankDataField.POSTAL_ADDRESS),
+        postalCode = parseStringBound(RawBankDataField.POSTAL_CODE),
+        city = parseStringBound(RawBankDataField.CITY)
     )
 }
 
@@ -59,20 +59,20 @@ data class BankRecord(
     val city: String
 )
 
-private fun parseInt(rawSixData: String, f: RawSixBankDataField): Int {
-    return parseString(rawSixData, f).toInt()
+private fun parseInt(rawData: String, f: RawBankDataField): Int {
+    return parseString(rawData, f).toInt()
 }
 
-private fun parseString(rawSixData: String, f: RawSixBankDataField): String {
-    return rawSixData.substring(indicesRange(offset(f), f.length)).trim()
+private fun parseString(rawData: String, f: RawBankDataField): String {
+    return rawData.substring(indicesRange(offset(f), f.length)).trim()
 }
 
 private fun indicesRange(start: Int, length: Int) = start.until(start + length)
 
-private fun offset(f: RawSixBankDataField): Int {
+private fun offset(f: RawBankDataField): Int {
     var result = 0
 
-    for (i in RawSixBankDataField.values()) {
+    for (i in RawBankDataField.values()) {
         if (i == f) return result
         result += i.length
     }
@@ -80,7 +80,7 @@ private fun offset(f: RawSixBankDataField): Int {
     return result
 }
 
-private enum class RawSixBankDataField(val length: Int) {
+private enum class RawBankDataField(val length: Int) {
     GROUP(2),                       // Gruppe
     CLEARING_NUMBER(5),             // BCNr
     SUBSIDIARY_ID(4),               // Filial-ID

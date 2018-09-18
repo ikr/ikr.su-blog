@@ -22,15 +22,15 @@ only was it less code now, but also the code structure got completely flat and t
 others. Today I faced the following problem.
 
 I have a tiny React component which is [a star rating
-input.](http://ikr.su/h/react-star-rating-input/demo.html) It highlights the provisional star rating
-value on mouse hover, and sets the new value on mouse click. The provisional value is stored in the
+input.](http://ikr.su/h/react-star-rating-input/demo.html) It highlights the prospective star rating
+value on mouse hover, and sets the new value on mouse click. The prospective value is stored in the
 component's `state`, which is updated on `mouseEnter`/`mouseLeave` DOM event. Then the
-`state.provisionalValue` is used to highlight the potential rating selection.
+`state.prospectiveValue` is used to highlight the potential rating selection.
 
 I don't always write React components, but when I do, I test-drive them. Let me replay here my
-`state.provisionalValue` support implementation, driven by tests, [in
+`state.prospectiveValue` support implementation, driven by tests, [in
 Mocha](https://mochajs.org/). First, we mount the component with [enzyme,](http://airbnb.io/enzyme/)
-and fabricate some initial `provisionalValue`:
+and fabricate some initial `prospectiveValue`:
 
 {% highlight javascript %}
 let wrapper

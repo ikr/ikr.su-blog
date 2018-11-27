@@ -10,19 +10,14 @@ tags:
   - decode
 ---
 
-Staying in a relatively safe realm of the TypeScript code, with strict null checks, is all fine and
+Staying in a relatively safe realm of TypeScript code, with strict null checks, is all fine and
 dandy. Sometimes though one has to deal with the cruel outside world: JSON from the server or from
 the localStorage, user input, URL route parameters, and so on. Then we have to shoehorn the
 uncontrolled chaos from the outside into our nice algebraic type system which strives to making the
 impossible states unrepresentable. Here's a simple example: an enumeration of Languages.
 
 {% highlight typescript %}
-enum Language {
-  DE = "de",
-  FR = "fr",
-  IT = "it",
-  EN = "en"
-}
+enum Language { DE, FR, IT, EN }
 {% endhighlight %}
 
 That's a handy thing to define, because, if you write a function returning some localized text, and
@@ -56,7 +51,7 @@ The TypeScript transpiler will complain:
 
 That makes sure our pattern matching is exhaustive. Fewer bugs!
 
-We'd certainly want to map stringly-typed `'de'`, `'fr'`, `'it'`, and whatever else (`null`,
+We'd certainly want to map the stringly-typed `'de'`, `'fr'`, `'it'`, and whatever else (`null`,
 `undefined`, `NaN`, `[object Object]`) obtained from the outside, into a member of the `Language`
 union, right at our module boundary, before doing anything with the value. We'd need an utility like
 this:

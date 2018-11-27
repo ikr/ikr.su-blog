@@ -34,9 +34,6 @@ function thanks(language: Language): string {
 
     case Language.IT:
       return "Grazie";
-
-    case Language.EN:
-      return "Thanks";
   }
 }
 {% endhighlight %}

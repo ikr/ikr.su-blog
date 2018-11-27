@@ -48,7 +48,8 @@ function thanks(language: Language): string {
 
 The TypeScript transpiler will complain:
 
-    a.ts:8:40 - error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+    a.ts:8:40 - error TS2366: Function lacks ending return statement
+    and return type does not include 'undefined'.
 
     8 function thanks(language: Language): string {
                                            ~~~~~~

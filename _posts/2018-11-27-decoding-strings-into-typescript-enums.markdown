@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Decoding strings into TypeScript enums"
-date: 2018-11-27 19:40:04
+date: 2018-11-27 18:45:04
 tags:
   - javascript
   - typescript

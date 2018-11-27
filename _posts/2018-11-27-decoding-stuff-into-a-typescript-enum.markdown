@@ -52,8 +52,8 @@ That makes sure our pattern matching is exhaustive. Fewer bugs!
 
 We'd certainly want to map the stringly-typed `'de'`, `'fr'`, `'it'`, and whatever else (`null`,
 `undefined`, `NaN`, `[object Object]`) obtained from the outside, into a member of the `Language`
-union, right at our module boundary, before doing anything with the value. We'd need an utility like
-this:
+union, right at our module's boundary, before doing anything with the value. We'd need an utility
+like this:
 
 {% highlight typescript %}
 function toLanguage(x: any): Language {

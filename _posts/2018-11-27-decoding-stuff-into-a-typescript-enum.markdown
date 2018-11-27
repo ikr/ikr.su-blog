@@ -83,7 +83,7 @@ course. Here's a little trick to avoid the repetition, stay type-safe, and never
 function toLanguage(x: any): Language {
   const key = String(x).toUpperCase();
   const mayBeLanguage: Language | undefined = (Language as any)[key];
-  return mayBeLanguage ? mayBeLanguage : Language.DE;
+  return mayBeLanguage !== undefined ? mayBeLanguage : Language.DE;
 }
 {% endhighlight %}
 

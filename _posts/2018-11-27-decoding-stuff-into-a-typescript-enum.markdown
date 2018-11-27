@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Decoding strings into TypeScript enums"
+title: "Decoding stuff into a TypeScript enum"
 date: 2018-11-27 18:45:04
 tags:
   - javascript
   - typescript
   - enum
+  - union
+  - adt
   - typesafe
   - decode
 ---

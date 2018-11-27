@@ -13,7 +13,7 @@ tags:
 Staying in a relatively safe realm of TypeScript code, with strict null checks, is all fine and
 dandy. Sometimes though one has to deal with the cruel outside world: JSON from the server or from
 the localStorage, user input, URL route parameters, and so on. Then we have to shoehorn the
-uncontrolled chaos from the outside into our nice algebraic type system which strives to making the
+uncontrolled chaos from the outside into our nice algebraic type system which strives for making the
 impossible states unrepresentable. Here's a simple example: an enumeration of Languages.
 
 {% highlight typescript %}
